@@ -4,9 +4,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-
-
-
 /**
  * MIDDLEWARE SUPABASE - Gestion de l'authentification et des redirections
  *
@@ -23,6 +20,7 @@ import { NextResponse, type NextRequest } from "next/server";
  *
  * @param request - La requête Next.js entrante
  * @returns NextResponse avec redirection ou continuation normale
+ */
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
