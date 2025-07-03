@@ -10,20 +10,22 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "ShipFree",
+  title: "ThumbnailAI",
   description:
-    "Open Source Alternative to ShipFast - Launch your startup in days Not in weeks",
+    "Prédisez le succès de vos miniatures YouTube en 30 secondes. Obtenez instantanément un score viral, une estimation du CTR, et des recommandations actionnables.",
   keywords: [
-    "saas",
-    "boilerplate",
-    "open source",
-    "free",
-    "open source shipfast",
-    "shipfree",
-    "idee8",
-    "made by idee8",
-    "free boilerplate",
-    "github",
+    "thumbnail",
+    "youtube",
+    "miniature",
+    "CTR",
+    "analyse",
+    "intelligence artificielle",
+    "AI",
+    "prédiction",
+    "viral",
+    "youtube analytics",
+    "thumbnail analyzer",
+    "youtube optimization",
   ],
 };
 
@@ -33,8 +35,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(bricolageGrotesque.className, "antialiased")}>
+    <html lang="fr">
+      <body
+        className={cn(
+          bricolageGrotesque.className,
+          "antialiased",
+          "bg-[#f9f9f9]",
+          "text-[#282828]"
+        )}
+      >
         {children}
       </body>
     </html>
